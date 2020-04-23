@@ -1,0 +1,53 @@
+.bo-section {
+    display: flex;
+    width: 100%;
+    .lining-admin{
+        width: 100%;
+        border: 1px solid white;
+    }
+    .colland-sidebar {
+        width: 20%;
+        height: 100vh;
+        background-color: #153948;
+        text-align: center;
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+    .box-item-header {
+        display: flex;
+        height: 8vh;
+        p {
+            align-self: flex-end;
+            margin-left: 5%;
+        }
+        // align-self: center;
+    }
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .line-admin {
+        border: 1px solid white;
+    }
+    .colland-header {
+        width: 80%;
+        height: 12vh;
+        background-color: #cf3f3d;
+        display: flex;
+        flex-direction: column;
+        padding-left: 3.5%;
+        .box-logo {
+            width: 15%;
+            margin-top: 15px;
+            outline-width: 0;
+            .img-logo {
+                width: 80%;
+                height: auto;
+            }
+        }
+        .header-new-film{
+            margin-top: 4%;
+        }
+    }
+}

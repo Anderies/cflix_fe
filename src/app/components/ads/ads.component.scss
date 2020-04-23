@@ -1,0 +1,28 @@
+.colland-iklan{
+    display: flex;
+    flex-direction: column;
+    width: 97%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 2%;
+}
+.box-iklan-section-1{
+    width: 100%;
+    display: flex;
+    margin-bottom: 1.5%;
+
+    .box-iklan{
+        width: 48%;
+        height: 25vh;
+        margin-right: 2%;
+        border: 1px solid gray;
+        text-align: center;
+        h1{
+            // align-self: center;
+        }
+    }
+}
+
+.mt{
+    // margin-top: 7%;
+}

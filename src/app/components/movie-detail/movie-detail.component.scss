@@ -1,0 +1,77 @@
+.colland-movie {
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 3%;
+
+    .txt-judul-film{
+        font-size: 28px;
+        font-family: roboto-bold;
+        letter-spacing: 0.7;
+        margin-bottom: 0.5rem;
+    }
+
+    .txt-genre-film{
+        font-size: 20px;
+        margin-bottom: 0.1rem;
+    }
+    .txt-biasa-film{
+        font-size: 18px;
+        margin-bottom: 0.1rem;
+    }
+    .cflix-video {
+        width: 100%;
+        height: 75vh;
+        .iframe-video {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .sinopsis-section {
+        margin-top: 2%;
+        margin-bottom: 15%;
+        .txt-sinopsis{
+            font-size: 14px;
+        }
+    }
+    .lining-movies {
+        border-radius: 5px;
+        border: 2px solid gray;
+    }
+
+    .movie-description {
+        display: flex;
+        .box-film-section {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+        }
+        .box-trailer-share {
+            width: 10%;
+            justify-content: flex-end;
+            display: flex;
+            img {
+                width: 32px;
+                height: 32px;
+            }
+        }
+        .box-image-movie {
+            width: 15%;
+            height: 215px;
+            margin-right: 2%;
+            img {
+                width: 100%;
+                height: 215px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .colland-movies {
+
+    }
+
+}

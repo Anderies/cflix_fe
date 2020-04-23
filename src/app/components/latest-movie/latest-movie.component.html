@@ -1,0 +1,46 @@
+<div class="colland-movies">
+    <div class="d-flex justify-content-between" style="margin-right: 1.5%">
+        <h1 class="txt-title">Baru di Upload</h1>
+        <p class="align-self-end">Lihat Semua</p>
+    </div>
+    <div class="slider" style="margin-top: 1.5%;">
+        <div class="box-movies" *ngFor="let slide of slides" style="cursor: pointer;" [ngStyle]="{'background-image': 'linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0,0,0,0.7)),
+        url(' + slide.img + ')'}" (click)="clickMovie()">
+            <div class="ngebawahin">
+                <div class="box-banner">
+                    <div class="rating-banner">
+                        <p>7.2</p>
+                    </div>
+                    <div class="hd-banner">
+                        <p>HD</p>
+                    </div>
+                </div>
+                <div class="box-judul-film">
+                    <h1 class="txt-film">{{( txt | slice:0:26)  + ' ...' }}</h1>
+                    <p class="txt-film">(2020)</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- <div class="slider" style="margin-top: 1.5%;">
+        <div class="box-movies" *ngFor="let slide of slides" [ngStyle]="{'background-image': 'linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0,0,0,0.7)),
+        url(' + slide.img + ')'}">
+            <div class="ngebawahin">
+                <div class="box-banner">
+                    <div class="rating-banner">
+                        <p>7.2</p>
+                    </div>
+                    <div class="hd-banner">
+                        <p>HD</p>
+                    </div>
+                </div>
+                <div class="box-judul-film">
+                    <h1 class="txt-film">{{( txt | slice:0:26)  + ' ...' }}</h1>
+                    <p class="txt-film">(2020)</p>
+                </div>
+            </div>
+
+        </div>
+    </div> -->
+</div>

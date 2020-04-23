@@ -1,0 +1,147 @@
+.colland-movies {
+    display: flex;
+    flex-direction: column;
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 4%;
+
+    .txt-title {
+        font-size: 28px;
+        font-family: roboto-bold;
+        letter-spacing: 1.7px;
+        border-bottom: 3px solid rgba(0, 0, 0, 0.8);
+        padding-bottom: 5px;
+        padding-right: 2%;
+    }
+    .slider {
+        width: 100%;
+        display: flex;
+        // justify-content: space-evenly;
+        // overflow-x: auto;
+    }
+
+
+    .box-movies {
+        width: 15.1%;
+        height: 260px;
+        margin-right: 1.5%;
+        // border: 0.5px solid gray;
+        border-radius: 5px;
+        box-shadow: 0.1px 4px 11px 0 grey;  
+        background-position: center;
+        .ngebawahin{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            position: relative;
+            .box-banner{
+                display: flex;
+                justify-content: space-between;
+                .hd-banner{
+                    // position: absolute;
+                    // left: 170px;
+                    // width: 25%;
+                    height: 35px;
+                    width: 20%;
+                    background: #93F291;
+                    border-top-right-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                    display: flex;
+                    z-index: 2;
+                    p{  
+                        font-family: roboto-med;
+                        align-self: center;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+                .rating-banner{
+                    // position: absolute;
+                    // left: 15px;
+                    // width: 3%;
+                    height: 35px;
+                    width: 20%;
+                    border-top-left-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                    background: #93F291;
+                    z-index: 2;
+                    text-align: center;
+                    display: flex;
+                    p{
+                        font-family: roboto-med;
+                        align-self: center;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        margin-left: auto;
+                        margin-right: auto;
+                        
+                    }
+                }
+    
+            } 
+            .txt-film{
+                align-self: flex-end;
+                text-align: center;
+                font-family: roboto-med;
+                letter-spacing: 0.7px;
+                font-size: 16px;
+                color: white;
+                text-shadow: 1px 0.5px 2px #a9a9a9;
+            }     
+            .box-judul-film{
+                position: absolute;
+                align-self: center;
+                bottom: 8px;
+            }
+            .overlay {
+                background-color: rgba(0, 0, 0, 0.6);
+                position: absolute;
+                width: 198px;
+                height: 219px;
+                opacity: 0.7;
+            }
+            .img-movie {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+        }
+
+    }
+
+    .box-movies:hover{
+        transform: scale(1.1);
+        transition: 1s;
+    }
+    // .slider::-webkit-scrollbar {
+    //     width: 0 !important;
+    //     overflow: -moz-scrollbars-none;
+    //     -ms-overflow-style: none;
+    // }
+
+    .box-movies {
+        width: 15.1%;
+        // height: 220px;
+        margin-right: 1.5%;
+        border: 1px solid gray;
+        border-radius: 5px;
+        box-shadow: 0.1px 4px 11px 0 grey;
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            width: 198px;
+            height: 219px;
+            opacity: 0.7;
+        }
+        .img-movie {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+    }
+}

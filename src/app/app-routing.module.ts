@@ -1,11 +1,31 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { HomepageComponent } from './components/homepage/homepage.component';
+import { MovieDetailComponent } from './components/movie-detail/movie-detail.component';
+import { HttpClientModule } from '@angular/common/http';
 
+const routes: Routes = [
+  {
+    path:"",
+    component: HomepageComponent
+  },
 
-const routes: Routes = [];
+  {
+    path:"movie-detail",
+    component: MovieDetailComponent
+  },
+  {
+    path: "PPPPPPPPPPPPPPPPPPPPPPPPPPPZ",
+    loadChildren: () => import('./components/film-crud/film-crud.module').then(m => m.FilmCrudModule)
+  }  
+];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    HttpClientModule,
+    RouterModule.forRoot(routes,{
+      scrollPositionRestoration: "top"
+    })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

@@ -5,19 +5,19 @@
     </div>
     <div class="slider" style="margin-top: 1.5%;">
         <div class="box-movies" *ngFor="let slide of slides" style="cursor: pointer;" [ngStyle]="{'background-image': 'linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0,0,0,0.7)),
-        url(' + slide.img + ')'}" (click)="clickMovie()">
+        url(' + slide.picture + ')'}" (click)="clickMovie()">
             <div class="ngebawahin">
                 <div class="box-banner">
                     <div class="rating-banner">
-                        <p>7.2</p>
+                        <p>{{slide.rating}}</p>
                     </div>
                     <div class="hd-banner">
                         <p>HD</p>
                     </div>
                 </div>
                 <div class="box-judul-film">
-                    <h1 class="txt-film">{{( txt | slice:0:26)  + ' ...' }}</h1>
-                    <p class="txt-film">(2020)</p>
+                    <h1 class="txt-film">{{( slide.title | slice:0:26) }}</h1>
+                    <!-- <p class="txt-film">(2020)</p> -->
                 </div>
             </div>
 

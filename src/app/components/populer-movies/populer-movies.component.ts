@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { MovieService } from 'src/app/services/movie.service';
 
 @Component({
   selector: 'app-populer-movies',
@@ -8,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class PopulerMoviesComponent implements OnInit {
 
-  txt = "BANGKE LAH SIH BALAR ASKODKKSA";
+  txt = "Default";
   slides = [
     {
       title: "1",
@@ -31,17 +32,25 @@ export class PopulerMoviesComponent implements OnInit {
       img: "https://movies.alldbx.com/images/default_person.1d043.png"
     },
   ]
-  constructor(private router: Router) { }
+  constructor(private router: Router,movieService:MovieService) { }
 
   ngOnInit(): void {
-  }
-
-  getMovies() {
-    // return this.http.get(this.env.API_URL + `program/category/${program_id}?limit=5`);
   }
 
   clickMovie(){
     this.router.navigate(['movie-detail']);
   }
+
+  // getListMovie() {
+  //   this.movieService
+  //   // this.movieService.getListMovie().subscribe((result:any) => {
+  //   //   console.log("data", result);
+  //   //   this.slides = result.data;
+  //   //   console.log("slides", this.slides);
+  //   // }, error => {
+  //   //   alert(error)
+  //   //   window.location.reload();
+  //   // });
+  // }
 
 }

@@ -6,6 +6,7 @@
     display: flex;
     padding-left: 3.5%;
     padding-right: 3.5%;
+    
     .box-logo {
         width: 15%;
         display: flex;
@@ -46,3 +47,42 @@
         }
     }
 }
+
+.isMobile{
+    display: none
+}
+
+@media only screen and (max-width: 600px) {
+    .isDesktop{
+        display: none!important;
+    }
+    .isMobile{
+        display: block;
+    }
+    .colland-tabtop{
+        top: 0!important;
+    }
+    .colland-tab{
+        position: fixed;
+        z-index: 5;
+        bottom: 0;
+        width: 100%;
+        height: 9vh;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        background-color: #CF3F3D;
+        display: flex;
+      
+        .box-logo{
+            width: 100%;
+            display: flex;
+            outline-width: 0;
+            justify-content: space-around;
+            .img-logo{
+                align-self: center;
+                width: 64px;
+            }
+        }
+    }
+}
+

@@ -11,10 +11,12 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { LatestMovieComponent } from './components/latest-movie/latest-movie.component';
 import { FilmCrudComponent } from './components/film-crud/film-crud.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
-import { MovieDetailComponent } from './components/movie-detail/movie-detail.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { HttpClientModule } from '@angular/common/http';
+import { LocationStrategy, PathLocationStrategy } from '@angular/common';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MovieDetailComponent } from './components/movie-detail/movie-detail.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,9 +33,10 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     SlickCarouselModule,
     HttpClientModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    NoopAnimationsModule
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: PathLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

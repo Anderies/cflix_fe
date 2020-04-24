@@ -6,25 +6,27 @@ import { HttpClientModule } from '@angular/common/http';
 
 const routes: Routes = [
   {
-    path:"",
+    path: '',
     component: HomepageComponent
   },
 
   {
-    path:"movie-detail",
+    path: "movie-detail/:id",
     component: MovieDetailComponent
+    // loadChildren: () => import('./components/movie-detail/movie-detail.module').then(m => m.MovieDetailModule)
+    
   },
   {
     path: "PPPPPPPPPPPPPPPPPPPPPPPPPPPZ",
     loadChildren: () => import('./components/film-crud/film-crud.module').then(m => m.FilmCrudModule)
-  }  
+  }
 ];
 
 @NgModule({
   imports: [
     HttpClientModule,
-    RouterModule.forRoot(routes,{
-      scrollPositionRestoration: "top"
+    RouterModule.forRoot(routes, {
+      scrollPositionRestoration: "top", useHash: false
     })],
   exports: [RouterModule]
 })

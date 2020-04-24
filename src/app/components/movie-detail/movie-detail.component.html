@@ -1,23 +1,31 @@
 <app-header></app-header>
-<div class="colland-movie">
+<div *ngIf="isLoadingMovie">
+    <p>Loading...</p>
+</div>
+<div class="colland-movie" *ngIf="!isLoadingMovie">
     <div class="cflix-video">
-        <iframe class="iframe-video" src="https://drive.google.com/file/d/1-0UqefyKEm20ySP8xNU4mv-5YFIPYrec/preview">
-
-        </iframe>
+        <div class="banner-iklan isDesktop">
+            <p>Iklan</p>
+        </div>
+        <iframe class="iframe-video" [src]="safeVideoURL" allowfullscreen></iframe>
+        <div class="banner-iklan isDesktop">
+            <p>Iklan</p>
+        </div>
+        <!--  -->
     </div>
     <hr class="lining-movies">
 
     <div class="movie-description">
-        <div class="box-image-movie">
+        <div class="box-image-movie isDesktop">
             <img src="https://movies.alldbx.com/images/default_person.1d043.png">
         </div>
         <div class="box-film-section">
             <h1 class="txt-judul-film">Judul Film (2020)</h1>
-            <h2 class="txt-genre-film">Genre : Horror, Action, Drama</h2>
+            <h2 class="txt-biasa-film">Genre : Horror, Action, Drama</h2>
             <p class="txt-biasa-film">Actor : yayan ruhian, sule prikitiew, andre taulany, raffi ahmad. </p>
             <p class="txt-biasa-film">Sutradara : Andreas</p>
         </div>
-        <div class="box-trailer-share">
+        <div class="box-trailer-share isDesktop">
             <img class="trailer"
                 src="https://www.freepnglogos.com/uploads/share-png/arrow-invite-join-share-sharing-icon-15.png">
             <img class="share"
@@ -29,7 +37,8 @@
         <h1 class="txt-judul-film">
             Sinopsis
         </h1>
-        <p class="txt-sinopsis">Dara dan Bima melanggar batas tanpa tahu konsekuensinya. Mereka berusaha menjalani tanggung jawab atas
+        <p class="txt-sinopsis">Dara dan Bima melanggar batas tanpa tahu konsekuensinya. Mereka berusaha menjalani
+            tanggung jawab atas
             pilihan mereka. Mereka pikir mereka siap jadi dewasa untuk menghadapi segala konsekuensinya. Keluguan mereka
             langsung diuji saat keluarga yang amat mencintai mereka tahu, lalu memaksa masuk dalam perjalanan pilihan
             mereka.

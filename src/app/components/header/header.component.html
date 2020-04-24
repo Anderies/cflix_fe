@@ -1,4 +1,4 @@
-<div class="colland-header">
+<div class="colland-header isDesktop">
     <div class="box-logo" [routerLink]="['']">
         <img class="img-logo" src="../../../assets/images/logo_cflix_putih 1.png">
         <!-- <h1 class="align-self-center">CFLIX</h1> -->
@@ -11,5 +11,20 @@
 
     <div class="search-bar-section">
         <input class="length-search">
+    </div>
+</div>
+
+<div class="colland-tab isMobile" [ngClass]="{'colland-tabtop' : isTokoped ==  true}">
+    <div class="box-logo">
+        <img class="img-logo" src="../../../assets/images/logo_cflix_putih 1.png" (click)="headerTop()">
+    </div>
+    <div class="box-logo" [routerLink]="['']">
+        <img class="img-logo" src="../../../assets/images/logo_cflix_putih 1.png">
+    </div>
+    <div class="box-logo" [routerLink]="['']">
+        <img class="img-logo" src="../../../assets/images/logo_cflix_putih 1.png">
+    </div>
+    <div class="box-logo" [routerLink]="['']">
+        <img class="img-logo" src="../../../assets/images/logo_cflix_putih 1.png">
     </div>
 </div>

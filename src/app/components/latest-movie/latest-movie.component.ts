@@ -10,40 +10,42 @@ import { MovieService } from 'src/app/services/movie.service';
 export class LatestMovieComponent implements OnInit {
 
   txt = "BANGKE LAH SIH BALAR ASKODKKSAASDSADSAASDSADSASADSA ASDSADSAD DSADSADSADSADSA";
-  slides;
-  // slides = [
-  //   {
-  //     title: "1",
-  //     img: "https://movies.alldbx.com/images/default_person.1d043.png"
-  //   }
-  //   , {
-  //     title: "2",
-  //     img: "https://movies.alldbx.com/images/default_person.1d043.png"
-  //   },
-  //   {
-  //     title: "2",
-  //     img: "https://movies.alldbx.com/images/default_person.1d043.png"
-  //   },
-  // ]
+  slides = [
+    {
+      title: "1",
+      img: "https://movies.alldbx.com/images/default_person.1d043.png"
+    }
+    , {
+      title: "2",
+      img: "https://movies.alldbx.com/images/default_person.1d043.png"
+    },
+    {
+      title: "2",
+      img: "https://movies.alldbx.com/images/default_person.1d043.png"
+    },
+    {
+      title: "2",
+      img: "https://movies.alldbx.com/images/default_person.1d043.png"
+    },
+  ]
   constructor(private router: Router, private movieService: MovieService) { }
 
   ngOnInit() {
     this.getListMovie();
   }
 
-  clickMovie() {
-    console.log("boom");
-    this.router.navigate(['movie-detail']);
+  clickMovie(slide) {
+    console.log("boom",slide);
+    this.router.navigate([`movie-detail/${slide.video}`]);
   }
 
   getListMovie() {
-    this.movieService.getListMovie().subscribe((result:any) => {
+    this.movieService.getListMovie().subscribe((result: any) => {
       console.log("data", result);
       this.slides = result.data;
       console.log("slides", this.slides);
     }, error => {
       alert(error)
-      window.location.reload();
     });
   }
 }

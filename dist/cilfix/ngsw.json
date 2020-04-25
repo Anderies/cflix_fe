@@ -1,0 +1,130 @@
+{
+  "configVersion": 1,
+  "timestamp": 1587790130621,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/5-es2015.bd67c14f68ee3902aecb.js",
+        "/5-es5.bd67c14f68ee3902aecb.js",
+        "/favicon.ico",
+        "/index.html",
+        "/main-es2015.cbb6bf41db71920b9ba8.js",
+        "/main-es5.cbb6bf41db71920b9ba8.js",
+        "/manifest.webmanifest",
+        "/polyfills-es2015.3fd94ed6a324eee92aec.js",
+        "/polyfills-es5.fbf249247bb2c06b6ab3.js",
+        "/runtime-es2015.35dd0128f63fc92f4c19.js",
+        "/runtime-es5.35dd0128f63fc92f4c19.js",
+        "/scripts.4a22e7cd19d6ed2de481.js",
+        "/styles.6a505becf3c0e67f5b38.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/Roboto-Bold.e07df86cef2e72111558.ttf",
+        "/Roboto-Medium.58aef543c97bbaf6a989.ttf",
+        "/Roboto-Regular.11eabca2251325cfc558.ttf",
+        "/ajax-loader.c5cd7f5300576ab4c882.gif",
+        "/assets/fonts/Roboto-Black.ttf",
+        "/assets/fonts/Roboto-BlackItalic.ttf",
+        "/assets/fonts/Roboto-Bold.ttf",
+        "/assets/fonts/Roboto-BoldItalic.ttf",
+        "/assets/fonts/Roboto-Italic.ttf",
+        "/assets/fonts/Roboto-Light.ttf",
+        "/assets/fonts/Roboto-LightItalic.ttf",
+        "/assets/fonts/Roboto-Medium.ttf",
+        "/assets/fonts/Roboto-MediumItalic.ttf",
+        "/assets/fonts/Roboto-Regular.ttf",
+        "/assets/fonts/Roboto-Thin.ttf",
+        "/assets/fonts/Roboto-ThinItalic.ttf",
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/images/logo_cflix_header.png",
+        "/assets/images/logo_cflix_putih 1.png",
+        "/slick.b7c9e1e479de3b53f1e4.woff",
+        "/slick.ced611daf7709cc778da.eot",
+        "/slick.d41f55a78e6f49a55128.ttf",
+        "/slick.f97e3bbf73254b011209.svg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/5-es2015.bd67c14f68ee3902aecb.js": "af8327a5a083b2c079a64b09e0daa8fd66aa2970",
+    "/5-es5.bd67c14f68ee3902aecb.js": "5126878e05060306a7f24ed7514680449059a009",
+    "/Roboto-Bold.e07df86cef2e72111558.ttf": "3dd713113ff2d79b94d2df343e2e28fa8e7279cf",
+    "/Roboto-Medium.58aef543c97bbaf6a989.ttf": "f6783010d5def128c4a1539333324f75701d9bab",
+    "/Roboto-Regular.11eabca2251325cfc558.ttf": "096c9245b6a192d1403a82848e104a65f578a8ec",
+    "/ajax-loader.c5cd7f5300576ab4c882.gif": "7a1aa43614396382bb15e5fde574d9cdcd21698f",
+    "/assets/fonts/Roboto-Black.ttf": "ee52f7cf8e54f3ee2afbc474a352d5c19514d9c1",
+    "/assets/fonts/Roboto-BlackItalic.ttf": "94ba47a5510d3e21ae4db0da0425b855686de586",
+    "/assets/fonts/Roboto-Bold.ttf": "3dd713113ff2d79b94d2df343e2e28fa8e7279cf",
+    "/assets/fonts/Roboto-BoldItalic.ttf": "60b9860b7fc93d6b0b322f170634105bc6a8cc8d",
+    "/assets/fonts/Roboto-Italic.ttf": "dc6756127707ab2d6e388a6023087351fa41999c",
+    "/assets/fonts/Roboto-Light.ttf": "92cc3b6f9440193c12fd02ed690e434d685a9cc8",
+    "/assets/fonts/Roboto-LightItalic.ttf": "a0440f60a96a59c4105c3eb639cb2573826f84fe",
+    "/assets/fonts/Roboto-Medium.ttf": "f6783010d5def128c4a1539333324f75701d9bab",
+    "/assets/fonts/Roboto-MediumItalic.ttf": "e4e31e55d279a9b12c32327a60a3a65c8350e5df",
+    "/assets/fonts/Roboto-Regular.ttf": "096c9245b6a192d1403a82848e104a65f578a8ec",
+    "/assets/fonts/Roboto-Thin.ttf": "711e666e7f52210ac487c7ed81a0ac68a2b52261",
+    "/assets/fonts/Roboto-ThinItalic.ttf": "75ffde032d49005faa643338eda97c311ad7d316",
+    "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/assets/images/logo_cflix_header.png": "859af1d0bbea93305175a255de06ed1eb4ca2b97",
+    "/assets/images/logo_cflix_putih 1.png": "d92f805f643bb1f60a19bbe615e1a1dcb763db8e",
+    "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/index.html": "4ddd74af8aae8dd8d295e80429c8fed7f751e2a0",
+    "/main-es2015.cbb6bf41db71920b9ba8.js": "4db45d064443a789aa905deb6238b12c517e8aa7",
+    "/main-es5.cbb6bf41db71920b9ba8.js": "fac40baa54fe4ee5a485057d0c5a6448c1e93320",
+    "/manifest.webmanifest": "14892abb23773e60e50f4a90472717ad1af61187",
+    "/polyfills-es2015.3fd94ed6a324eee92aec.js": "72ad4ccc0a3916ae4598199447cdeadd6d380570",
+    "/polyfills-es5.fbf249247bb2c06b6ab3.js": "e5472003c8575a8fca7583648df3905038faeb18",
+    "/runtime-es2015.35dd0128f63fc92f4c19.js": "a713606e07a5aca00bd79a8b7af5efae35f0b3ee",
+    "/runtime-es5.35dd0128f63fc92f4c19.js": "2fd6ef28f0d4b93e59f8742b93840501af0c04a3",
+    "/scripts.4a22e7cd19d6ed2de481.js": "9c69130b97a4b32fd01889e5a38461497304b0c5",
+    "/slick.b7c9e1e479de3b53f1e4.woff": "af91c12f0f406a4f801aeb3b398768fe41d8f864",
+    "/slick.ced611daf7709cc778da.eot": "2dff0768f4c0a53228761eab917e2c65556042d4",
+    "/slick.d41f55a78e6f49a55128.ttf": "3331eebdd4ba348ef25abe00c39ffbe867d46575",
+    "/slick.f97e3bbf73254b011209.svg": "17f63c6f6131389462ba3d814b7ddf83344705f9",
+    "/styles.6a505becf3c0e67f5b38.css": "76cf3b25727312ed2515e3b2c4cbd31818fee389"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}

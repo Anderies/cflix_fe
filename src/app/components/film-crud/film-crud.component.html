@@ -1,56 +1,49 @@
 <div class="bo-section">
     <div class="colland-sidebar">
-        <div class="box-item-header">
-            <p>ADMINISTRATOR</p>
+        <div class="box-admin-header">
+            <p>ADMINISTRATOR CFLIX</p>
         </div>
         <hr class="lining-admin">
         <div class="box-item-header">
+            <img src="../../../assets/images/dashboard.png">
+            <p>Dashboard</p>
+
+        </div>
+        <div class="box-item-header" (click)="panggilArdi()">
+            <img src="../../../assets/images/film_icon.png">
             <p>Film</p>
+
         </div>
-        <div class="box-item-header">
-            <p>Daftar Film</p>
+        <div *ngIf="isArdi == true">
+            <div class="box-item-header">
+                <img class="img-bola" src="../../../assets/images/circle_white.png">
+                <p>Daftar Film</p>
+            </div>
+            <div class="box-item-header">
+                <img class="img-bola" src="../../../assets/images/circle_white.png">
+                <p>Aktor</p>
+            </div>
+            <div class="box-item-header">
+                <img class="img-bola" src="../../../assets/images/circle_white.png">
+                <p>Genre</p>
+            </div>
+            <div class="box-item-header">
+                <img class="img-bola" src="../../../assets/images/circle_white.png">
+    
+                <p>Kualitas</p>
+            </div>
+            <div class="box-item-header">
+                <img class="img-bola" src="../../../assets/images/circle_white.png">
+                <p>Negara</p>
+            </div>
         </div>
-        <div class="box-item-header">
-            <p>Aktor</p>
-        </div>
-        <div class="box-item-header">
-            <p>Genre</p>
-        </div>
-        <div class="box-item-header">
-            <p>Kualitas</p>
-        </div>
-        <div class="box-item-header">
-            <p>Negara</p>
-        </div>
+
     </div>
     <div class="colland-header">
         <div class="box-logo" [routerLink]="['']">
             <img class="img-logo" src="../../../assets/images/logo_cflix_putih 1.png">
         </div>
-        <div class="header-new-film">
-            <p>New Films</p>
-            <div class="d-flex" style="margin-right: 3%;">
-                <div class="w-50" style="margin-right: 3%;margin-top: 2%;">
-                    <p>Judul Film</p>
-                    <input class="form-control">
-                    <p>Nama Aktor</p>
-                    <input class="form-control">
-                    <p>Genre Film</p>
-                    <select class="form-control">
-                    </select>
-                </div>
-                <div class="w-50" style="margin-top: 2%;">
-                    <p>Kualitas Film</p>
-                    <input class="form-control">
-                    <p>Negara</p>
-                    <select class="form-control">
-                    </select>
-                    <p>Sutradara</p>
-                    <input class="form-control">
-                </div>
-            </div>
-
-        </div>
+        <app-header-new-film></app-header-new-film>
     </div>
 
 

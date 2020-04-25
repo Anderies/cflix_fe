@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LogUpdateService } from 'src/app/services/log-update.service';
 
 @Component({
   selector: 'app-homepage',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomepageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private sw: LogUpdateService) {
+    this.sw.checkForUpdates();
+  }
 
   ngOnInit(): void {
   }

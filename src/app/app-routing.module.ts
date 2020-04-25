@@ -13,11 +13,9 @@ const routes: Routes = [
   {
     path: "movie-detail/:id",
     component: MovieDetailComponent
-    // loadChildren: () => import('./components/movie-detail/movie-detail.module').then(m => m.MovieDetailModule)
-    
   },
   {
-    path: "PPPPPPPPPPPPPPPPPPPPPPPPPPPZ",
+    path: "admin",
     loadChildren: () => import('./components/film-crud/film-crud.module').then(m => m.FilmCrudModule)
   }
 ];

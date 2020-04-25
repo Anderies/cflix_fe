@@ -1,0 +1,93 @@
+<div class="header-new-film">
+    <div class="d-flex justify-content-between w-100" style="margin-bottom: 3%;">
+        <div class="d-flex"  style="width: 50%;">
+            <h1 class="align-self-center" style="margin-bottom: 0;font-family: roboto-med;">New Films</h1>
+        </div>
+        <div class="box-button-group" style="width: 50%;">
+            <button class="btn btn-success" style="margin-right: 2%;">Simpan</button>
+            <button class="btn btn-danger" >Batal</button>
+        </div>
+
+    </div>
+
+    <div class="row" style="margin-left: 0;margin-right: 0;">
+        <div class="col-lg-12" style="padding-left: 0;padding-right: 0;">
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>Judul Film</p>
+                    <input class="form-control">
+
+                    <div style="margin-top: 4%;">
+                        <p>Nama Aktor (bisa lebih dari satu)</p>
+                        <div class="group-bg" *ngIf="isInputted == true">
+                            <div class="bg-blue">
+                                <p>Contoh Aktor 1</p>
+                            </div>
+                            <div class="bg-blue">
+                                <p>Contoh Aktor 1</p>
+                            </div>
+                        </div>
+                        <input class="form-control" (change)="inputing()">
+                    </div>
+
+                    <div style="margin-top: 4%;">
+                        <p>Genre Film (bisa lebih dari satu)</p>
+                        <div class="group-bg" *ngIf="isInputted == true">
+                            <div class="bg-blue">
+                                <p>Contoh Aktor 1</p>
+                            </div>
+                            <div class="bg-blue">
+                                <p>Contoh Aktor 1</p>
+                            </div>
+                        </div>
+                        <input class="form-control" (change)="inputing()">
+                    </div>
+
+                    <div style="margin-top: 4%;">
+                        <p>Video URL</p>
+                        <input class="form-control">
+                    </div>
+
+
+                    <div style="margin-top: 4%;">
+                        <p>Video Trailer</p>
+                        <input class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <p>Kualitas Film</p>
+                    <select class="form-control">
+                    </select>
+                    <div style="margin-top: 4%;">
+                        <p>Negara Film</p>
+                        <select class="form-control">
+                        </select>
+                    </div>
+
+                    <div style="margin-top: 4%;">
+                        <p>Sutradara</p>
+                        <input class="form-control">
+                    </div>
+
+                    <div style="margin-top: 4%;">
+                        <p>Poster Film</p>
+                        <div class="upload-foto"> 
+                            <img class="img-close" src="../../../assets/images/image_close.png" (click)="deleteImage()">
+                            <input class="form-control" id="upload_document" type="file" accept="image/jpeg" (click)="uploadImage()">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="row" style="margin-top: 4%;">
+                <div class="col-lg-8">
+                    <p>Sinposis</p>
+                    <textarea class="form-control" style="height: 100px;">
+
+                    </textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

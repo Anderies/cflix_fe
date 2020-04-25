@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./film-crud.component.scss']
 })
 export class FilmCrudComponent implements OnInit {
-
+  isArdi: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
   }
+  panggilArdi(){
+    this.isArdi = !this.isArdi
+  }
+
 
 }

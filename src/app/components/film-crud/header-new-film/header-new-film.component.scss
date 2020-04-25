@@ -1,0 +1,51 @@
+.header-new-film {
+    width: 95%;
+    margin-top: 4%;
+    .group-bg {
+        width: 100%;
+        display: flex;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        .bg-blue {
+            width: 25%;
+            height: 29px;
+            margin-right: 2%;
+            border-radius: 10px;
+            background-color: #18a0fb;
+            display: flex;
+            justify-content: center;
+            p {
+                align-self: center;
+            }
+        }
+    }
+    .upload-foto {
+        width: 40%;
+        height: 132px;
+        border: 1px solid gray;
+        background-color: gray;
+        background-image: url(../../../../assets/images/foto.png);
+        background-size: 50%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        position: relative;
+        .img-close {
+            right: 0;
+            background-color: red;
+            border-radius: 25%;
+            z-index: 2;
+            float: right;
+            margin-top: 3px;
+            margin-right: 3px;
+        }
+        #upload_document {
+            opacity: 0;
+            height: 100%;
+            left: 2px;
+            width: 100%;
+            border-radius: 2px;
+            cursor: pointer;
+            z-index: -1;
+        }
+    }
+}

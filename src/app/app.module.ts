@@ -9,12 +9,11 @@ import { PopulerMoviesComponent } from './components/populer-movies/populer-movi
 // Import your library
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { LatestMovieComponent } from './components/latest-movie/latest-movie.component';
-import { FilmCrudComponent } from './components/film-crud/film-crud.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { HttpClientModule } from '@angular/common/http';
-import { LocationStrategy, PathLocationStrategy } from '@angular/common';
+import { LocationStrategy, PathLocationStrategy, HashLocationStrategy } from '@angular/common';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MovieDetailComponent } from './components/movie-detail/movie-detail.component';
 @NgModule({
@@ -24,9 +23,8 @@ import { MovieDetailComponent } from './components/movie-detail/movie-detail.com
     AdsComponent,
     PopulerMoviesComponent,
     LatestMovieComponent,
-    FilmCrudComponent,
     HomepageComponent,
-    MovieDetailComponent
+    MovieDetailComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,7 +34,7 @@ import { MovieDetailComponent } from './components/movie-detail/movie-detail.com
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     NoopAnimationsModule
   ],
-  providers: [{provide: LocationStrategy, useClass: PathLocationStrategy}],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

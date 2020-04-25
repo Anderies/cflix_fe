@@ -1,4 +1,4 @@
-<div class="colland-header isDesktop">
+<div class="colland-header isDesktop" *ngIf="router.url !== '/admin'">
     <div class="box-logo" [routerLink]="['']">
         <img class="img-logo" src="../../../assets/images/logo_cflix_putih 1.png">
         <!-- <h1 class="align-self-center">CFLIX</h1> -->
@@ -14,7 +14,7 @@
     </div>
 </div>
 
-<div class="colland-tab isMobile" [ngClass]="{'colland-tabtop' : isTokoped ==  true}">
+<div class="colland-tab isMobile" *ngIf="router.url !== '/admin'" [ngClass]="{'colland-tabtop' : isTokoped ==  true}">
     <div class="box-logo">
         <img class="img-logo" src="../../../assets/images/logo_cflix_putih 1.png" (click)="headerTop()">
     </div>

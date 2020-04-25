@@ -17,14 +17,15 @@ const routes: Routes = [
   {
     path: "admin",
     loadChildren: () => import('./components/film-crud/film-crud.module').then(m => m.FilmCrudModule)
-  }
+  },
+  { path: '**', component: HomepageComponent }
 ];
 
 @NgModule({
   imports: [
     HttpClientModule,
     RouterModule.forRoot(routes, {
-      scrollPositionRestoration: "top", useHash: false
+      scrollPositionRestoration: 'top', useHash: true
     })],
   exports: [RouterModule]
 })

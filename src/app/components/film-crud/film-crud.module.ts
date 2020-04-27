@@ -4,17 +4,21 @@ import { FilmCrudComponent } from './film-crud.component';
 import { HeaderNewFilmComponent } from './header-new-film/header-new-film.component';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { AktorCrudComponent } from './aktor-crud/aktor-crud.component';
 
 const appRoutes: Routes = [
     {
         path: '',
         component: FilmCrudComponent
     },
+    {
+        path: 'aktor-crud',
+        component: AktorCrudComponent
+    }
 ];
 
 @NgModule({
-    imports: [
-        
+    imports: [       
         CommonModule,
         FormsModule,
         RouterModule.forChild(appRoutes)],
@@ -22,6 +26,7 @@ const appRoutes: Routes = [
     declarations: [
         FilmCrudComponent,
         HeaderNewFilmComponent,
+        AktorCrudComponent,
     ]
 })
 

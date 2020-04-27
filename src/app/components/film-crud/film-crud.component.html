@@ -12,14 +12,13 @@
         <div class="box-item-header" (click)="panggilArdi()">
             <img src="../../../assets/images/film_icon.png">
             <p>Film</p>
-
         </div>
         <div *ngIf="isArdi == true">
-            <div class="box-item-header">
+            <div class="box-item-header" (click)="panggilFilm()">
                 <img class="img-bola" src="../../../assets/images/circle_white.png">
                 <p>Daftar Film</p>
             </div>
-            <div class="box-item-header">
+            <div class="box-item-header" (click)="panggilAktor()"> 
                 <img class="img-bola" src="../../../assets/images/circle_white.png">
                 <p>Aktor</p>
             </div>
@@ -43,7 +42,8 @@
         <div class="box-logo" [routerLink]="['']">
             <img class="img-logo" src="../../../assets/images/logo_cflix_putih 1.png">
         </div>
-        <app-header-new-film></app-header-new-film>
+        <app-header-new-film *ngIf="isFilm"></app-header-new-film>
+        <app-aktor-crud *ngIf="isAktor"></app-aktor-crud>
     </div>
 
 

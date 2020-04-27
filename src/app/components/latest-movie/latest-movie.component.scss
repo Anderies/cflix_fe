@@ -15,14 +15,13 @@
         padding-right: 2%;
     }
     .slider {
-        width: 100%;
-        display: flex;
-        // justify-content: space-evenly;
-        // overflow-x: auto;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        grid-row-gap: 30px;
     }
 
     .box-movies {
-        width: 15.1%;
+        width: 90%;
         height: 260px;
         margin-right: 1.5%;
         // border: 0.5px solid gray;
@@ -112,33 +111,6 @@
     .box-movies:hover {
         transform: scale(1.1);
         transition: 1s;
-    }
-    // .slider::-webkit-scrollbar {
-    //     width: 0 !important;
-    //     overflow: -moz-scrollbars-none;
-    //     -ms-overflow-style: none;
-    // }
-
-    .box-movies {
-        width: 15.1%;
-        // height: 220px;
-        margin-right: 1.5%;
-        border: 1px solid gray;
-        border-radius: 5px;
-        box-shadow: 0.1px 4px 11px 0 grey;
-        .overlay {
-            background-color: rgba(0, 0, 0, 0.6);
-            position: absolute;
-            width: 198px;
-            height: 219px;
-            opacity: 0.7;
-        }
-        .img-movie {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            border-radius: 5px;
-        }
     }
 }
 

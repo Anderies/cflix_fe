@@ -1,0 +1,38 @@
+<div class="mt" *ngIf="!isAdd">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">No.</th>
+                <th scope="col">Nama Aktor</th>
+                <th scope="col">Action</th>
+                <th scope="col">
+                    <button class="btn btn-success" (click)="gotoTambah()">Tambah</button>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let aktor of listDataAktor;let i = index">
+                <th scope="row">{{i + 1}}</th>
+                <td>{{aktor.name}}</td>
+                <td><button (click)="editAktor(aktor)">Edit</button> | <button (click)="deleteAktor(aktor.id)">Hapus</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+<div class="mt" *ngIf="isAdd">
+    <h1>Tambah Aktor</h1>
+    <h3>Nama Aktor</h3>
+
+    <input class="form-control w-50" placeholder="Masukkan Nama Aktor" name="name" #name="ngModel"
+        [(ngModel)]="model.name">
+    <div class="box-button-group" style="width: 50%;margin-top: 2%;">
+        <button class="btn btn-success" *ngIf="!isEditSimpan" style="padding:10px 5%; margin-right: 5%;"
+            (click)="lemparData()">Simpan</button>
+        <button class="btn btn-success" *ngIf="isEditSimpan" style="padding:10px 5%; margin-right: 5%;"
+            (click)="lemparEditData()">Edit Simpan</button>
+        <button class="btn btn-danger" style="padding:10px 5%;" (click)="back()">Batal</button>
+    </div>
+</div>

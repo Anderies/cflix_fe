@@ -13,7 +13,7 @@ export class MovieService {
   // HIT SECOND TO GET PROGRAM
   getListMovie() {
     console.log("this.env", this.env.API_URL)
-    return this.http.get(this.env.API_URL + `home-new-upload.php`);
+    return this.http.get(this.env.API_URL + `home/home-new-upload.php`);
   }
 
   getOneMovie(video_id) {

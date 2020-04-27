@@ -36,7 +36,7 @@ export class LatestMovieComponent implements OnInit {
 
   clickMovie(slide) {
     console.log("boom",slide);
-    this.router.navigate([`movie-detail/${slide.video}`]);
+    this.router.navigate([`movie-detail/${slide.title_seo}/${slide.id}`]);
   }
 
   getListMovie() {

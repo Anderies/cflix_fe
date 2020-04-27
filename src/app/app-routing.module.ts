@@ -11,7 +11,7 @@ const routes: Routes = [
   },
 
   {
-    path: "movie-detail/:id",
+    path: "movie-detail/:title-seo/:id",
     component: MovieDetailComponent
   },
   {

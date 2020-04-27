@@ -28,9 +28,10 @@ export class MovieDetailComponent implements OnInit {
     this.isLoadingMovie = true;
     this.movieService.getOneMovie(id).subscribe((result: any) => {
       this.isLoadingMovie = false;
-      this.dataVideo = result.data[0].url_video;
+      this.dataVideo = result.data[0];
+      console.log("data video",result);
       console.log("boom", this.dataVideo);
-      this.safeVideoURL = this.sanitizer.bypassSecurityTrustResourceUrl(this.dataVideo);
+      this.safeVideoURL = this.sanitizer.bypassSecurityTrustResourceUrl(this.dataVideo.url_video);
 
     },
     error=>{

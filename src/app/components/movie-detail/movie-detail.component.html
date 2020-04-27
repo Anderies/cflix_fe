@@ -3,12 +3,14 @@
 </div>
 <div class="colland-movie" *ngIf="!isLoadingMovie">
     <div class="cflix-video">
-        <div class="banner-iklan isDesktop">
+        <!-- <div class="banner-iklan isDesktop">
             <p>Iklan</p>
-        </div>
-        <iframe class="iframe-video" [src]="safeVideoURL" allowfullscreen></iframe>
+        </div> -->
+        <iframe frameborder="0" style="overflow:hidden;" src="http://www.cbox.ws/box/?boxid=439&boxtag=7868&sec=main"
+         marginheight="1" marginwidth="1" name="cboxmain" id="cboxmain" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true"
+         class="iframe-video" [src]="safeVideoURL" allowfullscreen></iframe>
         <div class="banner-iklan isDesktop">
-            <p>Iklan</p>
+            <img src="https://koreandrama.es/wp-content/uploads/2020/02/itaewon-class-itaewon-keullasseu-698.jpg">
         </div>
     </div>
     <hr class="lining-movies">
@@ -18,7 +20,7 @@
             <img src="https://movies.alldbx.com/images/default_person.1d043.png">
         </div>
         <div class="box-film-section">
-            <h1 class="txt-judul-film">Judul Film (2020)</h1>
+            <h1 class="txt-judul-film">{{dataVideo.label}} (2020)</h1>
             <h2 class="txt-biasa-film">Genre : Horror, Action, Drama</h2>
             <p class="txt-biasa-film">Actor : yayan ruhian, sule prikitiew, andre taulany, raffi ahmad. </p>
             <p class="txt-biasa-film">Sutradara : Andreas</p>

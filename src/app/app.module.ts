@@ -27,7 +27,7 @@ import { MovieDetailComponent } from './components/movie-detail/movie-detail.com
     MovieDetailComponent,
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     SlickCarouselModule,
     HttpClientModule,

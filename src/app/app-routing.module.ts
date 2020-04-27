@@ -25,8 +25,9 @@ const routes: Routes = [
   imports: [
     HttpClientModule,
     RouterModule.forRoot(routes, {
-      scrollPositionRestoration: 'top', useHash: true
-    })],
+    scrollPositionRestoration: 'top', useHash: false,
+    initialNavigation: 'enabled'
+})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
